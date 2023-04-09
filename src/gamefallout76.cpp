@@ -55,12 +55,8 @@ QString GameFallout76::gameName() const
 QList<ExecutableInfo> GameFallout76::executables() const
 {
   return QList<ExecutableInfo>()
-      << ExecutableInfo("F76SE", findInGameFolder(feature<ScriptExtender>()->loaderName()))
       << ExecutableInfo("Fallout 76", findInGameFolder(binaryName()))
-      << ExecutableInfo("Fallout Launcher", findInGameFolder(getLauncherName()))
-      << ExecutableInfo("Creation Kit", findInGameFolder("CreationKit.exe"))
-      << ExecutableInfo("LOOT", QFileInfo(getLootPath())).withArgument("--game=\"Fallout76\"")
-         ;
+      << ExecutableInfo("Fallout Launcher", findInGameFolder(getLauncherName()));
 }
 
 QList<ExecutableForcedLoadSetting> GameFallout76::executableForcedLoads() const {
