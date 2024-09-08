@@ -19,6 +19,7 @@ public:
 
 public:  // IPluginGame interface
   QString gameName() const override;
+  void detectGame() override;
   QList<MOBase::ExecutableInfo> executables() const override;
   QList<MOBase::ExecutableForcedLoadSetting> executableForcedLoads() const override;
   void initializeProfile(const QDir& path, ProfileSettings settings) const override;
@@ -30,6 +31,7 @@ public:  // IPluginGame interface
   QStringList iniFiles() const override;
   QStringList DLCPlugins() const override;
   QStringList CCPlugins() const override;
+  SortMechanism sortMechanism() const override;
   LoadOrderMechanism loadOrderMechanism() const override;
   int nexusModOrganizerID() const override;
   int nexusGameID() const override;
@@ -44,7 +46,8 @@ public:  // IPlugin interface
   QList<MOBase::PluginSetting> settings() const override;
 
 protected:
-  std::shared_ptr<const GamebryoSaveGame> makeSaveGame(QString) const;
+  QString identifyGamePath() const override;
+  std::shared_ptr<const GamebryoSaveGame> makeSaveGame(QString) const override;
   QString savegameExtension() const override;
   QString savegameSEExtension() const override;
 };
