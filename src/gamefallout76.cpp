@@ -114,7 +114,7 @@ void GameFallout76::initializeProfile(const QDir& path, ProfileSettings settings
 
 QString GameFallout76::savegameExtension() const
 {
-  return "bgs";
+  return "";
 }
 
 QString GameFallout76::savegameSEExtension() const
