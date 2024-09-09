@@ -1,5 +1,5 @@
-#ifndef FALLOUT4_MODDATACONTENT_H
-#define FALLOUT4_MODDATACONTENT_H
+#ifndef FALLOUT76_MODDATACONTENT_H
+#define FALLOUT76_MODDATACONTENT_H
 
 #include <gamebryomoddatacontent.h>
 #include <ifiletree.h>
@@ -7,7 +7,7 @@
 class Fallout76ModDataContent : public GamebryoModDataContent
 {
 protected:
-  enum Fallout4Content
+  enum Fallout76Content
   {
     CONTENT_MATERIAL = CONTENT_NEXT_VALUE
   };
@@ -41,4 +41,4 @@ public:
   }
 };
 
-#endif  // FALLOUT4_MODDATACONTENT_H
+#endif  // FALLOUT76_MODDATACONTENT_H
