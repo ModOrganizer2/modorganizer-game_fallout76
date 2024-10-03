@@ -1,5 +1,5 @@
-#ifndef FALLOUT4_MODATACHECKER_H
-#define FALLOUT4_MODATACHECKER_H
+#ifndef FALLOUT76_MODATACHECKER_H
+#define FALLOUT76_MODATACHECKER_H
 
 #include <gamebryomoddatachecker.h>
 
@@ -11,13 +11,27 @@ public:
 protected:
   virtual const FileNameSet& possibleFolderNames() const override
   {
-    static FileNameSet result{
-        "interface", "meshes",     "music",         "scripts",
-        "sound",     "strings",    "textures",      "trees",
-        "video",     "materials",  "f4se",          "distantlod",
-        "asi",       "Tools",      "MCM",           "distantland",
-        "mits",      "dllplugins", "CalienteTools", "NetScriptFramework",
-        "shadersfx", "aaf"};
+    static FileNameSet result{"interface",
+                              "meshes",
+                              "music",
+                              "scripts",
+                              "sound",
+                              "strings",
+                              "textures",
+                              "trees",
+                              "video",
+                              "materials",
+                              "distantlod",
+                              "asi",
+                              "Tools",
+                              "MCM",
+                              "distantland",
+                              "mits",
+                              "dllplugins",
+                              "CalienteTools",
+                              "NetScriptFramework",
+                              "shadersfx",
+                              "aaf"};
     return result;
   }
   virtual const FileNameSet& possibleFileExtensions() const override
@@ -27,4 +41,4 @@ protected:
   }
 };
 
-#endif  // FALLOUT4_MODATACHECKER_H
+#endif  // FALLOUT76_MODATACHECKER_H
