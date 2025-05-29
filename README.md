@@ -1,4 +1,5 @@
-# MO2 Plugin to support Fallout 76
+# Archived repository - Check [modorganizer-game_bethesda](https://github.com/ModOrganizer2/modorganizer-game_bethesda)
 
-This is the continuation of https://github.com/EntranceJew/modorganizer-game_fallout76 
-This is not a Fork because the former is already a fork of the Fallout 4 game plugin which is making things messy.
+
+ModOrganizer2 plugins for most Bethesda games are now managed in a single repository
+at https://github.com/ModOrganizer2/modorganizer-game_bethesda.
